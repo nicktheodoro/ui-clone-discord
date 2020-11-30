@@ -14,9 +14,13 @@ export const Container = styled.div`
     max-height: 100vh;
     overflow-y: scroll;
 
+
     ::-webkit-scrollbar {
         display: none;
     }
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 `;
 export const Separator = styled.div`
     grid-area: SL;
