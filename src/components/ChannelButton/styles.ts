@@ -36,12 +36,12 @@ export const Container = styled.div`
 			color: var(--white);
 		}
 
-		> div + div {
+		> div:not(:first-child) {
 			display: block;
 		}
 	}
 
-	> div + div {
+	> div:not(:first-child) {
 		display: none;
 	}
 `;
